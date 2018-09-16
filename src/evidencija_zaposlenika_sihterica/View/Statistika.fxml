@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="1000.0" style="-fx-background-color: #F8F9FA;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="evidencija_zaposlenika_sihterica.Controller.StatistikaController">
+   <children>
+      <Pane fx:id="statistika_pane" layoutX="68.0" prefHeight="675.0" prefWidth="964.0" style="-fx-background-color: #F8F9FA;">
+         <children>
+            <Pane layoutX="32.0" layoutY="49.0" prefHeight="195.0" prefWidth="288.0" styleClass="pane" stylesheets="@korisnikinformacije.css">
+               <children>
+                  <HBox alignment="CENTER_LEFT" layoutY="44.0" prefHeight="40.0" prefWidth="278.0" spacing="10.0">
+                     <children>
+                        <ImageView fx:id="slikaSatiTOP1" fitHeight="40.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Img/face-0.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="imePrezimeBrojSatiTOP1" lineSpacing="5.0" prefHeight="19.0" prefWidth="160.0" text="Toni Božić">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="brojSatiTOP1" text="72 h">
+                           <font>
+                              <Font name="System Bold Italic" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutY="92.0" prefHeight="40.0" prefWidth="278.0" spacing="10.0">
+                     <children>
+                        <ImageView fx:id="slikaSatiTOP2" fitHeight="40.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Img/face-2%20-%20Copy.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="imePrezimeBrojSatiTOP2" lineSpacing="5.0" prefHeight="19.0" prefWidth="160.0" text="Dragana Simovic">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="brojSatiTOP2" text="65 h">
+                           <font>
+                              <Font name="System Bold Italic" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutY="140.0" prefHeight="40.0" prefWidth="278.0" spacing="10.0">
+                     <children>
+                        <ImageView fx:id="slikaSatiTOP3" fitHeight="40.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Img/face-3.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="imePrezimeBrojSatiTOP3" lineSpacing="5.0" prefHeight="19.0" prefWidth="160.0" text="Ante Maric">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="brojSatiTOP3" text="63 h">
+                           <font>
+                              <Font name="System Bold Italic" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Label layoutX="90.0" layoutY="-2.0" prefHeight="33.0" prefWidth="81.0" text="Broj sati " textFill="#29bf24">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="32.0" layoutY="289.0" prefHeight="195.0" prefWidth="288.0" styleClass="pane" stylesheets="@korisnikinformacije.css">
+               <children>
+                  <HBox alignment="CENTER_LEFT" layoutY="44.0" prefHeight="40.0" prefWidth="278.0" spacing="10.0">
+                     <children>
+                        <ImageView fx:id="slikaSatiLOS1" fitHeight="40.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Img/face-5%20-%20Copy%20(2).jpg" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="imePrezimeBrojSatiLOS1" lineSpacing="5.0" prefHeight="19.0" prefWidth="160.0" text="Nemam Pojma">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="brojSatiLOS1" text="15 h">
+                           <font>
+                              <Font name="System Bold Italic" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutY="92.0" prefHeight="40.0" prefWidth="278.0" spacing="10.0">
+                     <children>
+                        <ImageView fx:id="slikaSatiLOS2" fitHeight="40.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Img/face-4%20-%20Copy.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="imePrezimeBrojSatiLOS2" lineSpacing="5.0" prefHeight="19.0" prefWidth="160.0" text="Mitar Miric">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="brojSatiLOS2" text="18 h">
+                           <font>
+                              <Font name="System Bold Italic" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutY="140.0" prefHeight="40.0" prefWidth="278.0" spacing="10.0">
+                     <children>
+                        <ImageView fx:id="slikaSatiLOS3" fitHeight="40.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Img/face-7.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="imePrezimeBrojSatiLOS3" lineSpacing="5.0" prefHeight="19.0" prefWidth="160.0" text="Mate Maric">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="brojSatiLOS3" text="35 h">
+                           <font>
+                              <Font name="System Bold Italic" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Label layoutX="90.0" layoutY="-2.0" prefHeight="33.0" prefWidth="81.0" text="Broj sati " textFill="RED">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="340.0" layoutY="49.0" prefHeight="195.0" prefWidth="288.0" styleClass="pane" stylesheets="@korisnikinformacije.css">
+               <children>
+                  <HBox alignment="CENTER_LEFT" layoutY="44.0" prefHeight="40.0" prefWidth="278.0" spacing="10.0">
+                     <children>
+                        <ImageView fx:id="slikaPlacaTOP1" fitHeight="40.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Img/face-0.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="imePrezimeIznosPlaceTOP1" lineSpacing="5.0" prefHeight="19.0" prefWidth="160.0" text="Toni Božić">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="iznosPlaceTOP1" prefHeight="19.0" prefWidth="74.0" text="5000 $">
+                           <font>
+                              <Font name="System Bold Italic" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutY="92.0" prefHeight="40.0" prefWidth="278.0" spacing="10.0">
+                     <children>
+                        <ImageView fx:id="slikaPlacaTOP2" fitHeight="40.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Img/face-2%20-%20Copy.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="imePrezimeIznosPlaceTOP2" lineSpacing="5.0" prefHeight="17.0" prefWidth="160.0" text="Dragana Simovic">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="iznosPlaceTOP2" prefHeight="19.0" prefWidth="75.0" text="4000 $">
+                           <font>
+                              <Font name="System Bold Italic" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutY="140.0" prefHeight="40.0" prefWidth="278.0" spacing="10.0">
+                     <children>
+                        <ImageView fx:id="slikaPlacaTOP3" fitHeight="40.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Img/face-10.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="imePrezimeIznosPlaceTOP3" lineSpacing="5.0" prefHeight="17.0" prefWidth="160.0" text="Mislav Arapovic">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="iznosPlaceTOP3" prefHeight="19.0" prefWidth="74.0" text="2500 $">
+                           <font>
+                              <Font name="System Bold Italic" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Label layoutX="90.0" layoutY="-2.0" prefHeight="33.0" prefWidth="100.0" text="Iznos plaće" textFill="#29bf24">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="340.0" layoutY="289.0" prefHeight="195.0" prefWidth="288.0" styleClass="pane" stylesheets="@korisnikinformacije.css">
+               <children>
+                  <HBox alignment="CENTER_LEFT" layoutY="44.0" prefHeight="40.0" prefWidth="278.0" spacing="10.0">
+                     <children>
+                        <ImageView fx:id="slikaPlacaLOS1" fitHeight="40.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Img/face-8.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="imePrezimeIznosPlaceLOS1" lineSpacing="5.0" prefHeight="17.0" prefWidth="160.0" text="Ante Klepic">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="iznosPlaceLOS1" prefHeight="19.0" prefWidth="70.0" text="1000 $">
+                           <font>
+                              <Font name="System Bold Italic" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutY="92.0" prefHeight="40.0" prefWidth="278.0" spacing="10.0">
+                     <children>
+                        <ImageView fx:id="slikaPlacaLOS2" fitHeight="40.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Img/face-7%20-%20Copy%20(2).jpg" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="imePrezimeIznosPlaceLOS2" lineSpacing="5.0" prefHeight="17.0" prefWidth="160.0" text="Bosko Buha">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="iznosPlaceLOS2" prefHeight="19.0" prefWidth="68.0" text="1250 $">
+                           <font>
+                              <Font name="System Bold Italic" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutY="140.0" prefHeight="40.0" prefWidth="278.0" spacing="10.0">
+                     <children>
+                        <ImageView fx:id="slikaPlacaLOS3" fitHeight="40.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Img/face-9.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="imePrezimeIznosPlaceLOS3" lineSpacing="5.0" prefHeight="17.0" prefWidth="160.0" text="Sinan Sakic">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="iznosPlaceLOS3" prefHeight="19.0" prefWidth="71.0" text="1350 $">
+                           <font>
+                              <Font name="System Bold Italic" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Label layoutX="90.0" layoutY="-2.0" prefHeight="33.0" prefWidth="100.0" text="Iznos plaće" textFill="RED">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="645.0" layoutY="49.0" prefHeight="195.0" prefWidth="288.0" styleClass="pane" stylesheets="@korisnikinformacije.css">
+               <children>
+                  <HBox alignment="CENTER_LEFT" layoutY="44.0" prefHeight="40.0" prefWidth="278.0" spacing="10.0">
+                     <children>
+                        <ImageView fx:id="slikaGodisnjiTOP1" fitHeight="40.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Img/face-0.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="imePrezimeGodisnjiTOP1" lineSpacing="5.0" prefHeight="17.0" prefWidth="160.0" text="Toni Božić">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="daniGodisnjiTOP1" text="15 dana">
+                           <font>
+                              <Font name="System Bold Italic" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutY="92.0" prefHeight="40.0" prefWidth="278.0" spacing="10.0">
+                     <children>
+                        <ImageView fx:id="slikaGodisnjiTOP2" fitHeight="40.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Img/face-2%20-%20Copy.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="imePrezimeGodisnjiTOP2" lineSpacing="5.0" prefHeight="17.0" prefWidth="160.0" text="Dragana Simovic">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="daniGodisnjiTOP2" text="13 dana">
+                           <font>
+                              <Font name="System Bold Italic" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutY="140.0" prefHeight="40.0" prefWidth="278.0" spacing="10.0">
+                     <children>
+                        <ImageView fx:id="slikaGodisnjiTOP3" fitHeight="40.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Img/face-3.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="imePrezimeGodisnjiTOP3" lineSpacing="5.0" prefHeight="17.0" prefWidth="160.0" text="Ante Maric">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="daniGodisnjiTOP3" text="10 dana">
+                           <font>
+                              <Font name="System Bold Italic" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Label alignment="CENTER" layoutX="46.0" layoutY="-2.0" prefHeight="33.0" prefWidth="148.0" text="Dani na godišnjem">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="645.0" layoutY="289.0" prefHeight="195.0" prefWidth="288.0" styleClass="pane" stylesheets="@korisnikinformacije.css">
+               <children>
+                  <HBox alignment="CENTER_LEFT" layoutY="44.0" prefHeight="40.0" prefWidth="278.0" spacing="10.0">
+                     <children>
+                        <ImageView fx:id="slikaBolovanjeTOP1" fitHeight="40.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Img/face-0.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="imePrezimeBolovanjeTOP1" lineSpacing="5.0" prefHeight="17.0" prefWidth="160.0" text="Karla Matic">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="daniBolovanjeTOP1" text="18 dana">
+                           <font>
+                              <Font name="System Bold Italic" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutY="92.0" prefHeight="40.0" prefWidth="278.0" spacing="10.0">
+                     <children>
+                        <ImageView fx:id="slikaBolovanjeTOP2" fitHeight="40.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Img/face-6.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="imePrezimeBolovanjeTOP2" lineSpacing="5.0" prefHeight="17.0" prefWidth="160.0" text="Jadranka Bilokapic">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="daniBolovanjeTOP2" text="8 dana">
+                           <font>
+                              <Font name="System Bold Italic" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutY="140.0" prefHeight="40.0" prefWidth="278.0" spacing="10.0">
+                     <children>
+                        <ImageView fx:id="slikaBolovanjeTOP3" fitHeight="40.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Img/face-14%20-%20Copy.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="imePrezimeBolovanjeTOP3" lineSpacing="5.0" prefHeight="17.0" prefWidth="160.0" text="Jasna Zlokic">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="daniBolovanjeTOP3" text="7 dana">
+                           <font>
+                              <Font name="System Bold Italic" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Label alignment="CENTER" layoutX="46.0" layoutY="-2.0" prefHeight="33.0" prefWidth="148.0" text="Dani na bolovanju" textFill="#030303">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="136.0" layoutY="526.0" prefHeight="122.0" prefWidth="288.0" styleClass="pane" stylesheets="@korisnikinformacije.css">
+               <children>
+                  <FontAwesomeIconView glyphName="CLOCK_ALT" layoutX="25.0" layoutY="77.0" size="45" />
+                  <Label layoutX="133.0" layoutY="14.0" prefHeight="33.0" prefWidth="118.0" text="Prosjek sati">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="93.0" layoutY="45.0" prefHeight="7.0" prefWidth="148.0" />
+                  <Label fx:id="prosjekSatiLBL" layoutX="164.0" layoutY="63.0" prefHeight="35.0" prefWidth="73.0" text="7.3 h">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="501.0" layoutY="526.0" prefHeight="122.0" prefWidth="288.0" styleClass="pane" stylesheets="@korisnikinformacije.css">
+               <children>
+                  <FontAwesomeIconView fill="#105700" glyphName="MONEY" layoutX="25.0" layoutY="77.0" size="45" />
+                  <Label layoutX="133.0" layoutY="14.0" prefHeight="33.0" prefWidth="118.0" text="Prosječna plaća">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="93.0" layoutY="45.0" prefHeight="7.0" prefWidth="148.0" />
+                  <Label fx:id="prosjekPlacaLBL" layoutX="119.0" layoutY="63.0" prefHeight="35.0" prefWidth="118.0" text="1800 $">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane layoutY="-2.0" prefHeight="663.0" prefWidth="61.0" style="-fx-background-color: #515D65;">
+         <children>
+            <Button alignment="TOP_CENTER" layoutX="1.0" layoutY="58.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="buttonLeft" stylesheets="@../Style/menuLijevo.css">
+               <graphic>
+                  <FontAwesomeIconView fill="#fdfffd" glyphName="HOME" onMouseClicked="#OtvoriMain" size="35" wrappingWidth="32.712865471839905" />
+               </graphic>
+            </Button>
+            <Button layoutY="115.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="buttonLeft" stylesheets="@../Style/menuLijevo.css">
+               <graphic>
+                  <FontAwesomeIconView fill="#00ff40" glyphName="USERS" onMouseClicked="#OtvoriZaposlenike" size="33" wrappingWidth="35.712865471839905" />
+               </graphic>
+            </Button>
+            <Button layoutX="-2.0" layoutY="173.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="buttonLeft" stylesheets="@../Style/menuLijevo.css">
+               <graphic>
+                  <FontAwesomeIconView fill="#63ff73" glyphName="CHECK" onMouseClicked="#OtvoriOnline" size="35" wrappingWidth="33.00000856816769" />
+               </graphic>
+            </Button>
+            <Button layoutX="-2.0" layoutY="231.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="buttonLeft" stylesheets="@../Style/menuLijevo.css">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="AREA_CHART" onMouseClicked="#OtvoriStatistiku" size="35" wrappingWidth="31.000008568167686" />
+               </graphic>
+            </Button>
+            <Button layoutX="-1.0" layoutY="300.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="buttonLeft" stylesheets="@../Style/menuLijevo.css">
+               <graphic>
+                  <FontAwesomeIconView fill="#fffee0" glyphName="ADDRESS_CARD" onMouseClicked="#OtvoriSihtaricu" size="33" wrappingWidth="35.00000856816769" />
+               </graphic>
+            </Button>
+            <Button layoutX="-2.0" layoutY="359.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="buttonLeft" stylesheets="@../Style/menuLijevo.css">
+               <graphic>
+                  <FontAwesomeIconView glyphName="FROWN_ALT" onMouseClicked="#OtvoriBolovanje" size="35" text="" wrappingWidth="28.712880551815033" />
+               </graphic>
+            </Button>
+            <Button layoutY="425.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="buttonLeft" stylesheets="@../Style/menuLijevo.css">
+               <graphic>
+                  <FontAwesomeIconView fx:id="otvoriGodisnjuBtn" fill="#60ff00" glyphName="SMILE_ALT" onMouseClicked="#OtvoriGodisnji" size="35" text="" wrappingWidth="27.712880551815033" />
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

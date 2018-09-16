@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="evidencija_zaposlenika_sihterica.Controller.GodisnjiController">
+   <children>
+      <Pane fx:id="bolovanje_pane1" layoutX="51.0" layoutY="-1.0" prefHeight="675.0" prefWidth="1014.0" style="-fx-background-color: #F3F3F3;">
+         <children>
+            <ScrollPane fx:id="sp1" layoutX="29.0" layoutY="271.0" prefHeight="387.0" prefWidth="463.0">
+               <content>
+                  <TilePane fx:id="aktivniGodisnjiTile" prefHeight="390.0" prefWidth="478.0" styleClass="pane" stylesheets="@korisnikinformacije.css" />
+               </content>
+            </ScrollPane>
+            <Label alignment="CENTER" layoutX="97.0" layoutY="236.0" prefHeight="35.0" prefWidth="312.0" text="Trenutno na godisnjem">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <ScrollPane fx:id="sp11" layoutX="541.0" layoutY="271.0" prefHeight="387.0" prefWidth="426.0">
+               <content>
+                  <TilePane fx:id="evidencijaGodisnjegTile" prefHeight="392.0" prefWidth="426.0" styleClass="pane" stylesheets="@korisnikinformacije.css" />
+               </content>
+            </ScrollPane>
+            <Label alignment="CENTER" layoutX="528.0" layoutY="236.0" prefHeight="35.0" prefWidth="426.0" text="Evidencija godisnjeg">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Pane layoutX="532.0" layoutY="49.0" prefHeight="122.0" prefWidth="426.0" styleClass="pane" stylesheets="@korisnikinformacije.css">
+               <children>
+                  <Label layoutX="14.0" layoutY="47.0" text="Zaposlenik" />
+                  <Label layoutX="14.0" layoutY="91.0" text="Datum" />
+                  <ComboBox fx:id="PovratakSaGodisnjegCombo" layoutX="91.0" layoutY="43.0" prefWidth="150.0" />
+                  <DatePicker fx:id="DolazakDE" layoutX="91.0" layoutY="87.0" prefHeight="25.0" prefWidth="150.0" />
+                  <Button fx:id="SpremiPovratakBtn" layoutX="284.0" layoutY="87.0" mnemonicParsing="false" onMouseClicked="#Povratak" text="Spremi" />
+                  <Label alignment="CENTER" layoutX="7.0" layoutY="2.0" prefHeight="25.0" prefWidth="419.0" text="Povratak sa godisnjeg">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="29.0" layoutY="31.0" prefHeight="171.0" prefWidth="354.0" styleClass="pane" stylesheets="@korisnikinformacije.css">
+               <children>
+                  <Label alignment="CENTER" layoutX="-1.0" layoutY="2.0" prefHeight="25.0" prefWidth="377.0" text="Odlazak na godisnji">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="47.0" text="Zaposlenik" />
+                  <Label layoutX="14.0" layoutY="91.0" text="Datum" />
+                  <ComboBox fx:id="OdlazakNaGodisnjiCombo" layoutX="91.0" layoutY="43.0" prefWidth="150.0" />
+                  <DatePicker fx:id="OdlazakDE" layoutX="91.0" layoutY="87.0" prefHeight="25.0" prefWidth="150.0" />
+                  <Button fx:id="SpremiOdlazakBtn" layoutX="286.0" layoutY="132.0" mnemonicParsing="false" onMouseClicked="#OdlazakNaGodisnji" text="Spremi" />
+                  <Label layoutX="14.0" layoutY="136.0" text="Zamjena" />
+                  <ComboBox fx:id="ZamjenaCombo" layoutX="91.0" layoutY="132.0" prefWidth="150.0" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane layoutY="-1.0" prefHeight="682.0" prefWidth="61.0" style="-fx-background-color: #515D65;">
+         <children>
+            <Button alignment="TOP_CENTER" layoutX="1.0" layoutY="58.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="buttonLeft" stylesheets="@../Style/menuLijevo.css">
+               <graphic>
+                  <FontAwesomeIconView fill="#fdfffd" glyphName="HOME" onMouseClicked="#OtvoriMain" size="35" wrappingWidth="32.712865471839905" />
+               </graphic>
+            </Button>
+            <Button layoutY="115.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="buttonLeft" stylesheets="@../Style/menuLijevo.css">
+               <graphic>
+                  <FontAwesomeIconView fill="#00ff40" glyphName="USERS" onMouseClicked="#OtvoriZaposlenike" size="33" wrappingWidth="35.712865471839905" />
+               </graphic>
+            </Button>
+            <Button layoutX="-2.0" layoutY="173.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="buttonLeft" stylesheets="@../Style/menuLijevo.css">
+               <graphic>
+                  <FontAwesomeIconView fill="#63ff73" glyphName="CHECK" onMouseClicked="#OtvoriOnline" size="35" wrappingWidth="33.00000856816769" />
+               </graphic>
+            </Button>
+            <Button layoutX="-2.0" layoutY="231.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="buttonLeft" stylesheets="@../Style/menuLijevo.css">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="AREA_CHART" onMouseClicked="#OtvoriStatistiku" size="35" wrappingWidth="31.000008568167686" />
+               </graphic>
+            </Button>
+            <Button layoutX="-1.0" layoutY="300.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="buttonLeft" stylesheets="@../Style/menuLijevo.css">
+               <graphic>
+                  <FontAwesomeIconView fill="#fffee0" glyphName="ADDRESS_CARD" onMouseClicked="#OtvoriSihtaricu" size="33" wrappingWidth="35.00000856816769" />
+               </graphic>
+            </Button>
+            <Button layoutX="-2.0" layoutY="359.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="buttonLeft" stylesheets="@../Style/menuLijevo.css">
+               <graphic>
+                  <FontAwesomeIconView glyphName="FROWN_ALT" onMouseClicked="#OtvoriBolovanje" size="35" text="" wrappingWidth="28.712880551815033" />
+               </graphic>
+            </Button>
+            <Button layoutY="425.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="buttonLeft" stylesheets="@../Style/menuLijevo.css">
+               <graphic>
+                  <FontAwesomeIconView fx:id="otvoriGodisnjuBtn" fill="#60ff00" glyphName="SMILE_ALT" onMouseClicked="#OtvoriGodisnji" size="35" text="" wrappingWidth="27.712880551815033" />
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

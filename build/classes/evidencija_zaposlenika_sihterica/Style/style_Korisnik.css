@@ -1,0 +1,7 @@
+.buttonAkcija {
+    -fx-background-color: #F8F9FA;
+   
+}
+.buttonAkcija:hover {
+    -fx-background-color:#FFFFFF;   
+}
