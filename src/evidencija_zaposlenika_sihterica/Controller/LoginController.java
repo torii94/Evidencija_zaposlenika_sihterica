@@ -15,6 +15,7 @@ import java.util.ResourceBundle;
 import java.util.logging.Logger;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
@@ -52,11 +53,11 @@ public class LoginController implements Initializable ,ControlledScreen{
 //        String password = "caMUmwAv";
 
 
-        String kor_ime = "bspitaro1u";
-        String password = "FtrbIcCnsvLa";
+//        String kor_ime = "bspitaro1u";
+//        String password = "FtrbIcCnsvLa";
 
-//      String kor_ime = ime.getText();
-//      String password = lozinka.getText();
+      String kor_ime = ime.getText();
+      String password = lozinka.getText();
 
         if (LoginService.login(kor_ime, password)){
             if(LoginService.logiraniKorisnik().getTip().equals("Vlasnik")){
@@ -66,9 +67,16 @@ public class LoginController implements Initializable ,ControlledScreen{
             else if(LoginService.logiraniKorisnik().getTip().equals("Zaposlenik")){
                  myController.loadScreen(Evidencija_zaposlenika_sihterica.screen9ID, Evidencija_zaposlenika_sihterica.screen9File);
                  myController.setScreen(Evidencija_zaposlenika_sihterica.screen9ID);
-            }
-            else {return;}
-        }                    
+            }          
+        }else {
+                 Alert greska = new Alert(Alert.AlertType.ERROR);
+                 
+                greska.setTitle("Nije uspijelo!");
+                greska.setHeaderText("Greska:");
+                greska.setContentText("Pogresni korisnicki podaci!");
+                greska.show();
+
+            }                    
     }
     
     @Override

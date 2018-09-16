@@ -23,6 +23,7 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.geometry.Pos;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
@@ -47,6 +48,11 @@ import javafx.scene.text.Text;
 public class GodisnjiController implements Initializable,ControlledScreen {
 
     ScreensController myController;
+    
+    Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+    Alert potvrda = new Alert(Alert.AlertType.INFORMATION);
+    Alert greska = new Alert(Alert.AlertType.ERROR);
+    
     @FXML
     private Pane bolovanje_pane1;
     @FXML
@@ -236,44 +242,71 @@ public class GodisnjiController implements Initializable,ControlledScreen {
     @FXML
     private void Povratak(MouseEvent event) {
        
-        Godisnji god=GodisnjiService.godisnjiService.DajDatumOdlaskaNaGodisnji(PovratakSaGodisnjegCombo.getValue().getId());
+         potvrda.setTitle("Test");
+        potvrda.setHeaderText("Rezultat:");
+        potvrda.setContentText("Povratak sa godisnjeg je uspješno postavljen!");
+ 
+        greska.setTitle("Nije uspijelo!");
+        greska.setHeaderText("Greska:");
+        greska.setContentText("Greska prilikom povratka sa godisnjeg");
         
-        Godisnji g= new Godisnji();
-        System.out.println(god.getOdlazak());
-        LocalDate isoDate = DolazakDE.getValue();        
-        long p2 = ChronoUnit.DAYS.between( god.getOdlazak().toLocalDate(),isoDate);        
-        Date date = java.sql.Date.valueOf(isoDate);
-        g.setKorisnikID(PovratakSaGodisnjegCombo.getValue());
-        g.setAktivan(false);
-        g.setDaniNaGodisnjem((int)p2);
-        g.setDolazak(date);
+        if( DolazakDE.getValue() != null && PovratakSaGodisnjegCombo.getValue() != null  ){  
+                               
+            Godisnji god=GodisnjiService.godisnjiService.DajDatumOdlaskaNaGodisnji(PovratakSaGodisnjegCombo.getValue().getId());
 
-        GodisnjiService.godisnjiService.uredi(g);
+            Godisnji g= new Godisnji();
+            System.out.println(god.getOdlazak());
+            LocalDate isoDate = DolazakDE.getValue();        
+            long p2 = ChronoUnit.DAYS.between( god.getOdlazak().toLocalDate(),isoDate);        
+            Date date = java.sql.Date.valueOf(isoDate);
+            g.setKorisnikID(PovratakSaGodisnjegCombo.getValue());
+            g.setAktivan(false);
+            g.setDaniNaGodisnjem((int)p2);
+            g.setDolazak(date);
 
-        evidencijaGodisnjegTile.getChildren().clear();
-        aktivniGodisnjiTile.getChildren().clear();
-        PopuniGodisnji();        
+            GodisnjiService.godisnjiService.uredi(g);
+            potvrda.show();
+            evidencijaGodisnjegTile.getChildren().clear();
+            aktivniGodisnjiTile.getChildren().clear();
+            PopuniGodisnji();   
+         
+        }else{
+            greska.show();
+        }
     }
 
     @FXML
     private void OdlazakNaGodisnji(MouseEvent event) {
         
-        Godisnji g= new Godisnji();
-        ObservableList<Korisnik> korisnici= KorisnikService.korisnikService.sveIzBaze();
+        potvrda.setTitle("Test");
+        potvrda.setHeaderText("Rezultat:");
+        potvrda.setContentText("Ggodisnji uspješno postavljen!");
+ 
+        greska.setTitle("Nije uspijelo!");
+        greska.setHeaderText("Greska:");
+        greska.setContentText("Greska prilikom postavljanja godisnjeg");
+        
+        if( OdlazakDE.getValue() != null && OdlazakNaGodisnjiCombo.getValue() != null && ZamjenaCombo.getValue() != null ){  
+                   
+            Godisnji g= new Godisnji();
+            ObservableList<Korisnik> korisnici= KorisnikService.korisnikService.sveIzBaze();
 
-        LocalDate isoDate = OdlazakDE.getValue();
-        Date date = java.sql.Date.valueOf(isoDate);
+            LocalDate isoDate = OdlazakDE.getValue();
+            Date date = java.sql.Date.valueOf(isoDate);
 
-        g.setKorisnikID(OdlazakNaGodisnjiCombo.getValue());
-        g.setAktivan(true);
-        g.setOdlazak(date);
-        g.setZamjena(ZamjenaCombo.getValue());
+            g.setKorisnikID(OdlazakNaGodisnjiCombo.getValue());
+            g.setAktivan(true);
+            g.setOdlazak(date);
+            g.setZamjena(ZamjenaCombo.getValue());
 
-        GodisnjiService.godisnjiService.spasi(g);   
-
-        evidencijaGodisnjegTile.getChildren().clear();
-        aktivniGodisnjiTile.getChildren().clear();
-        PopuniGodisnji();
+            GodisnjiService.godisnjiService.spasi(g);   
+            potvrda.show();
+            evidencijaGodisnjegTile.getChildren().clear();
+            aktivniGodisnjiTile.getChildren().clear();
+            PopuniGodisnji();
+        }else {
+            greska.show();
+        }
     }
     
 }
