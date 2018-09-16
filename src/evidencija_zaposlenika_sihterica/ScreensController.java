@@ -77,7 +77,7 @@ public class ScreensController  extends AnchorPane {
             if (!getChildren().isEmpty()) {    //if there is more than one screen
                 Timeline fade = new Timeline(
                         
-                        new KeyFrame(Duration.ZERO, new KeyValue(opacity, 0.6)),
+                        new KeyFrame(Duration.ZERO, new KeyValue(opacity, 1)),
                         new KeyFrame(new Duration(550), new EventHandler<ActionEvent>() {
                     @Override
                     public void handle(ActionEvent t) {
@@ -85,7 +85,7 @@ public class ScreensController  extends AnchorPane {
                         getChildren().add(0, screens.get(name));     //add the screen
                         Timeline fadeIn = new Timeline(
                                 new KeyFrame(Duration.ZERO, new KeyValue(opacity, 0.0)),
-                                new KeyFrame(new Duration(350), new KeyValue(opacity, 0.6)));
+                                new KeyFrame(new Duration(350), new KeyValue(opacity, 1)));
                         fadeIn.play();
                     }
                 }, new KeyValue(opacity, 0.0)));
@@ -97,7 +97,7 @@ public class ScreensController  extends AnchorPane {
 //no one else been displayed, then just show
                 Timeline fadeIn = new Timeline(
                         new KeyFrame(Duration.ZERO, new KeyValue(opacity, 0.0)),
-                        new KeyFrame(new Duration(1250), new KeyValue(opacity, 0.6)));
+                        new KeyFrame(new Duration(1250), new KeyValue(opacity, 1)));
                 fadeIn.play();
             }
             return true;

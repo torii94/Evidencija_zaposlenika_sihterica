@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="Evidencija_zaposlenika_sihterica.jar" size="1206151" download="eager" />
+    <jar href="Evidencija_zaposlenika_sihterica.jar" size="1206190" download="eager" />
     <jar href="lib\controlsfx-8.40.11.jar" size="985420" download="eager" />
     <jar href="lib\fontawesomefx-commons-8.15.jar" size="20957" download="eager" />
     <jar href="lib\fontawesomefx-controls-8.15.jar" size="3369" download="eager" />
