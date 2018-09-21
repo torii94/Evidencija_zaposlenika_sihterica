@@ -16,7 +16,7 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="504.0" prefWidth="710.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="evidencija_zaposlenika_sihterica.Controller.KorisnikInformacijeController">
+<AnchorPane id="AnchorPane" prefHeight="504.0" prefWidth="710.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="evidencija_zaposlenika_sihterica.Controller.KorisnikInformacijeController">
     <stylesheets>
         <URL value="@korisnikinformacije.css" />
     </stylesheets>

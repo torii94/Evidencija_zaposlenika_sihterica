@@ -175,27 +175,27 @@ public class StatistikaController implements Initializable,ControlledScreen {
                      
         ObservableList<Prisutnost> prisutnosti= PrisutnostService.prisutnostService.top3BrojSati(firma);
                                                           
-            imePrezimeBrojSatiTOP1.setText(prisutnosti.get(0).getKorisnikID().getIme()+" "+prisutnosti.get(0).getKorisnikID().getPrezime());
+            imePrezimeBrojSatiTOP1.setText(prisutnosti.get(0).ImeIPrezime());
             slikaSatiTOP1.setImage(prisutnosti.get(0).getKorisnikID().getSlika());
             brojSatiTOP1.setText(String.valueOf(prisutnosti.get(0).getBrojSatiDan())+" "+"h");
 
-            imePrezimeBrojSatiTOP2.setText(prisutnosti.get(1).getKorisnikID().getIme()+" "+prisutnosti.get(1).getKorisnikID().getPrezime());
+            imePrezimeBrojSatiTOP2.setText(prisutnosti.get(1).ImeIPrezime());
             slikaSatiTOP2.setImage(prisutnosti.get(1).getKorisnikID().getSlika());
             brojSatiTOP2.setText(String.valueOf(prisutnosti.get(1).getBrojSatiDan())+" "+"h");
 
-            imePrezimeBrojSatiTOP3.setText(prisutnosti.get(2).getKorisnikID().getIme()+" "+prisutnosti.get(2).getKorisnikID().getPrezime());
+            imePrezimeBrojSatiTOP3.setText(prisutnosti.get(2).ImeIPrezime());
             slikaSatiTOP3.setImage(prisutnosti.get(2).getKorisnikID().getSlika());
             brojSatiTOP3.setText(String.valueOf(prisutnosti.get(2).getBrojSatiDan())+" "+"h");
 
-            imePrezimeBrojSatiLOS1.setText(prisutnosti.get(prisutnosti.size()-1 ).getKorisnikID().getIme()+" "+prisutnosti.get(prisutnosti.size()-1 ).getKorisnikID().getPrezime());
+            imePrezimeBrojSatiLOS1.setText(prisutnosti.get(prisutnosti.size()-1 ).ImeIPrezime());
             slikaSatiLOS1.setImage(prisutnosti.get(prisutnosti.size()-1 ).getKorisnikID().getSlika());
             brojSatiLOS1.setText(String.valueOf(prisutnosti.get(prisutnosti.size()-1 ).getBrojSatiDan())+" "+"h");
 
-            imePrezimeBrojSatiLOS2.setText(prisutnosti.get(prisutnosti.size()-2 ).getKorisnikID().getIme()+" "+prisutnosti.get(prisutnosti.size()-2 ).getKorisnikID().getPrezime());
+            imePrezimeBrojSatiLOS2.setText(prisutnosti.get(prisutnosti.size()-2 ).ImeIPrezime());
             slikaSatiLOS2.setImage(prisutnosti.get(prisutnosti.size()-2 ).getKorisnikID().getSlika());
             brojSatiLOS2.setText(String.valueOf(prisutnosti.get(prisutnosti.size()-2 ).getBrojSatiDan())+" "+"h");
 
-            imePrezimeBrojSatiLOS3.setText(prisutnosti.get(prisutnosti.size()-3 ).getKorisnikID().getIme()+" "+prisutnosti.get(prisutnosti.size()-3 ).getKorisnikID().getPrezime());
+            imePrezimeBrojSatiLOS3.setText(prisutnosti.get(prisutnosti.size()-3 ).ImeIPrezime());
             slikaSatiLOS3.setImage(prisutnosti.get(prisutnosti.size()-3 ).getKorisnikID().getSlika());
             brojSatiLOS3.setText(String.valueOf(prisutnosti.get(prisutnosti.size()-3 ).getBrojSatiDan())+" "+"h");
 
@@ -210,27 +210,27 @@ public class StatistikaController implements Initializable,ControlledScreen {
 
         ObservableList<Placa> place= PlacaService.placaService.top3Place(firma);
    
-            imePrezimeIznosPlaceTOP1.setText(place.get(0).getKorisnikID().getIme()+" "+place.get(0).getKorisnikID().getPrezime());
+            imePrezimeIznosPlaceTOP1.setText(place.get(0).ImeIPrezime());
             slikaPlacaTOP1.setImage(place.get(0).getKorisnikID().getSlika());
             iznosPlaceTOP1.setText(String.valueOf(place.get(0).getIznosMjesecnePlace())+" "+"$");
 
-            imePrezimeIznosPlaceTOP2.setText(place.get(1).getKorisnikID().getIme()+" "+place.get(1).getKorisnikID().getPrezime());
+            imePrezimeIznosPlaceTOP2.setText(place.get(1).ImeIPrezime());
             slikaPlacaTOP2.setImage(place.get(1).getKorisnikID().getSlika());
             iznosPlaceTOP2.setText(String.valueOf(place.get(1).getIznosMjesecnePlace())+" "+"$");
 
-            imePrezimeIznosPlaceTOP3.setText(place.get(2).getKorisnikID().getIme()+" "+place.get(2).getKorisnikID().getPrezime());
+            imePrezimeIznosPlaceTOP3.setText(place.get(2).ImeIPrezime());
             slikaPlacaTOP3.setImage(place.get(2).getKorisnikID().getSlika());
             iznosPlaceTOP3.setText(String.valueOf(place.get(2).getIznosMjesecnePlace())+" "+"$");
 
-            imePrezimeIznosPlaceLOS1.setText(place.get(place.size()-1).getKorisnikID().getIme()+" "+place.get(place.size()-2).getKorisnikID().getPrezime());
+            imePrezimeIznosPlaceLOS1.setText(place.get(place.size()-1).ImeIPrezime());
             slikaPlacaLOS1.setImage(place.get(place.size()-1).getKorisnikID().getSlika());
             iznosPlaceLOS1.setText(String.valueOf(place.get(place.size()-1).getIznosMjesecnePlace())+" "+"$");
 
-            imePrezimeIznosPlaceLOS2.setText(place.get(place.size()-2).getKorisnikID().getIme()+" "+place.get(place.size()-2).getKorisnikID().getPrezime());
+            imePrezimeIznosPlaceLOS2.setText(place.get(place.size()-2).ImeIPrezime());
             slikaPlacaLOS2.setImage(place.get(place.size()-2).getKorisnikID().getSlika());
             iznosPlaceLOS2.setText(String.valueOf(place.get(place.size()-2).getIznosMjesecnePlace())+" "+"$");
 
-            imePrezimeIznosPlaceLOS3.setText(place.get(place.size()-3).getKorisnikID().getIme()+" "+place.get(place.size()-3).getKorisnikID().getPrezime());
+            imePrezimeIznosPlaceLOS3.setText(place.get(place.size()-3).ImeIPrezime());
             slikaPlacaLOS3.setImage(place.get(place.size()-3).getKorisnikID().getSlika());
             iznosPlaceLOS3.setText(String.valueOf(place.get(place.size()-3).getIznosMjesecnePlace())+" "+"$");
 
@@ -245,29 +245,29 @@ public class StatistikaController implements Initializable,ControlledScreen {
 
         ObservableList<Godisnji> godisnji= GodisnjiService.godisnjiService.top3Godisnji(firma);
 
-            imePrezimeGodisnjiTOP1.setText(godisnji.get(0).getKorisnikID().getIme()+" "+godisnji.get(0).getKorisnikID().getPrezime());
+            imePrezimeGodisnjiTOP1.setText(godisnji.get(0).ImeIPrezime());
             slikaGodisnjiTOP1.setImage(godisnji.get(0).getKorisnikID().getSlika());
             daniGodisnjiTOP1.setText(String.valueOf(godisnji.get(0).getDaniNaGodisnjem())+" "+"dana");
 
-            imePrezimeGodisnjiTOP2.setText(godisnji.get(1).getKorisnikID().getIme()+" "+godisnji.get(1).getKorisnikID().getPrezime());
+            imePrezimeGodisnjiTOP2.setText(godisnji.get(1).ImeIPrezime());
             slikaGodisnjiTOP2.setImage(godisnji.get(1).getKorisnikID().getSlika());    
             daniGodisnjiTOP2.setText(String.valueOf(godisnji.get(1).getDaniNaGodisnjem())+" "+"dana");
 
-            imePrezimeGodisnjiTOP3.setText(godisnji.get(2).getKorisnikID().getIme()+" "+godisnji.get(2).getKorisnikID().getPrezime());
+            imePrezimeGodisnjiTOP3.setText(godisnji.get(2).ImeIPrezime());
             slikaGodisnjiTOP3.setImage(godisnji.get(2).getKorisnikID().getSlika());
             daniGodisnjiTOP3.setText(String.valueOf(godisnji.get(2).getDaniNaGodisnjem())+" "+"dana");
 
         ObservableList<Bolovanje> bolovanje= BolovanjeService.bolovanjeService.top3Bolovanje(firma);
                       
-            imePrezimeBolovanjeTOP1.setText(bolovanje.get(0).getKorisnikID().getIme()+" "+bolovanje.get(0).getKorisnikID().getPrezime());
+            imePrezimeBolovanjeTOP1.setText(bolovanje.get(0).ImeIPrezime());
             slikaBolovanjeTOP1.setImage(bolovanje.get(0).getKorisnikID().getSlika());
             daniBolovanjeTOP1.setText(String.valueOf(bolovanje.get(0).getDaniNaBolovanju())+" "+"dana");
 
-            imePrezimeBolovanjeTOP2.setText(bolovanje.get(1).getKorisnikID().getIme()+" "+bolovanje.get(1).getKorisnikID().getPrezime());
+            imePrezimeBolovanjeTOP2.setText(bolovanje.get(1).ImeIPrezime());
             slikaBolovanjeTOP2.setImage(bolovanje.get(1).getKorisnikID().getSlika());
             daniBolovanjeTOP2.setText(String.valueOf(bolovanje.get(1).getDaniNaBolovanju())+" "+"dana");
 
-            imePrezimeBolovanjeTOP3.setText(bolovanje.get(2).getKorisnikID().getIme()+" "+bolovanje.get(2).getKorisnikID().getPrezime());
+            imePrezimeBolovanjeTOP3.setText(bolovanje.get(2).ImeIPrezime());
             slikaBolovanjeTOP3.setImage(bolovanje.get(2).getKorisnikID().getSlika());
             daniBolovanjeTOP3.setText(String.valueOf(bolovanje.get(2).getDaniNaBolovanju())+" "+"dana");
 

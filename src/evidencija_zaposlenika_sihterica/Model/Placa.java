@@ -9,7 +9,7 @@ package evidencija_zaposlenika_sihterica.Model;
  *
  * @author toni
  */
-public class Placa {
+public class Placa extends ImePrezime {
     private int ID;
     private Korisnik KorisnikID;
     private float IznosGodisnjePlace;
@@ -82,6 +82,11 @@ public class Placa {
 
     public void setGodisnjiBonus(float GodisnjiBonus) {
         this.GodisnjiBonus = GodisnjiBonus;
+    }
+
+    @Override
+    public String ImeIPrezime() {
+        return KorisnikID.ImeIPrezime();
     }
     
     

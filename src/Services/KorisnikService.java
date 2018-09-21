@@ -38,48 +38,8 @@ public static final KorisnikService korisnikService=new KorisnikService();
     
     @Override
     public ObservableList<Korisnik> sveIzBaze() {
-        try {
-            ObservableList <Korisnik> korisnici = FXCollections.observableArrayList();
-            ResultSet rs = DB.select("SELECT korisnik.* , firma.Naziv_Firme, firma.Adresa FROM korisnik inner join firma on korisnik.firma_id=firma.id where firma.id=3 and korisnik.Tip_Korisnika='Zaposlenik'");
-            while (rs.next()){
-                
-                Image fxSlika = null;
-                try {
-                    BufferedImage bImage = ImageIO.read(rs.getBinaryStream(6));
-                    fxSlika = SwingFXUtils.toFXImage(bImage, null);
-                } catch (NullPointerException ex) {
-                    fxSlika = null;
-                } 
-                Korisnik k= new Korisnik();
-                Firma f=new Firma();
-                
-                k.setId(rs.getInt(1));
-                k.setIme(rs.getString(2));
-                k.setPrezime(rs.getString(3));
-                k.setEmail(rs.getString(4));
-                k.setSpol(rs.getString(5));
-                k.setSlika(fxSlika);
-                k.setDatumRodjenja(rs.getDate(7));
-                k.setAdresa(rs.getString(8));
-                k.setTelefon(rs.getString(9));
-                k.setObrazovanje(rs.getString(10));
-                k.setOpis_posla(rs.getString(11));
-                k.setTip(rs.getString(14));
-                f.setNaziv(rs.getString(16));
-                f.setAadresa(rs.getString(17));
-                k.setFirma(f);
-                
-                korisnici.add(k);
-            }
-            return korisnici;
-        } catch (SQLException ex) {
-            System.out.println("Greška prilikom izvršavanja upita: " + ex.getMessage());
-            return null;
-        }
-        catch (IOException ex) {
-            System.out.println("Greška prilikom dodavanja slike: " + ex.getMessage());
-            return null;
-        }
+                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+
     }
 
     @Override

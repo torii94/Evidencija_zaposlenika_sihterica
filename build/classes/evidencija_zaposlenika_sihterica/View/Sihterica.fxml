@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.TilePane?>
 
-<AnchorPane id="AnchorPane" prefHeight="670.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="evidencija_zaposlenika_sihterica.Controller.SihtericaController">
+<AnchorPane id="AnchorPane" prefHeight="670.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="evidencija_zaposlenika_sihterica.Controller.SihtericaController">
    <children>
       <Pane layoutX="50.0" layoutY="-1.0" prefHeight="663.0" prefWidth="788.0">
          <children>

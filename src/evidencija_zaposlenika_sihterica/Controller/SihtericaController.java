@@ -204,7 +204,7 @@ public class SihtericaController implements Initializable ,ControlledScreen{
                 int firma=LoginService.logiraniKorisnik().getFirma().getID();
                 ObservableList<Prisutnost> prisutnosti= (ObservableList<Prisutnost>) PrisutnostService.prisutnostService.CijelaSihtarica(firma);
                     for(Prisutnost p:prisutnosti){             
-                        table.addCell(new PdfPCell(new Paragraph(p.getKorisnikID().getIme()+" "+p.getKorisnikID().getPrezime(),FontFactory.getFont(FontFactory.TIMES_ROMAN,8,java.awt.Font.PLAIN))));            
+                        table.addCell(new PdfPCell(new Paragraph(p.ImeIPrezime(),FontFactory.getFont(FontFactory.TIMES_ROMAN,8,java.awt.Font.PLAIN))));            
                         for(int i = 1; i< 32; i++){
                         table.addCell(new PdfPCell(new Paragraph(String.valueOf(PrisutnostService.prisutnostService.GetDay(p.getKorisnikID().getId(), i)),FontFactory.getFont(FontFactory.TIMES_ROMAN,6,java.awt.Font.PLAIN))));
                         }
@@ -212,7 +212,7 @@ public class SihtericaController implements Initializable ,ControlledScreen{
                 }
 
                 if(mode == 2){
-                  table.addCell(new PdfPCell(new Paragraph(prisutnost.getKorisnikID().getIme()+" "+prisutnost.getKorisnikID().getPrezime(),FontFactory.getFont(FontFactory.TIMES_ROMAN,8,java.awt.Font.PLAIN))));
+                  table.addCell(new PdfPCell(new Paragraph(prisutnost.ImeIPrezime(),FontFactory.getFont(FontFactory.TIMES_ROMAN,8,java.awt.Font.PLAIN))));
                        for(int i = 1; i< 32; i++){
                            table.addCell(new PdfPCell(new Paragraph(String.valueOf(PrisutnostService.prisutnostService.GetDay(prisutnost.getKorisnikID().getId(), i)),FontFactory.getFont(FontFactory.TIMES_ROMAN,7,java.awt.Font.PLAIN))));
                        }

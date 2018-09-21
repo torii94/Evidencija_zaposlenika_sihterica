@@ -74,7 +74,7 @@ public class ZaposleniciController implements Initializable,ControlledScreen {
         for(Korisnik korisnik : korisnici){
 
             Text t = new Text();
-            t.setText(korisnik.getIme()+" "+korisnik.getPrezime());        
+            t.setText(korisnik.ImeIPrezime());        
             t.setFont(Font.font ("Arial", FontWeight.BOLD,  11));
             t.setFill(Color.BLACK);
 

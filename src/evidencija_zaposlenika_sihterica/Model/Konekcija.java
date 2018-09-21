@@ -33,7 +33,7 @@ public class Konekcija {
         this.host = "localhost";
         this.korisnik = "root";
         this.lozinka = "";
-        this.baza = "evidencija_zaposlenika";
+        this.baza = "evidencija_zaposlenikaa";
         this.spoji();
     }
     

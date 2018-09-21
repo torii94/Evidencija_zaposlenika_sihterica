@@ -45,19 +45,19 @@ public class LoginController implements Initializable ,ControlledScreen{
 
     @FXML
     private void Prijava(MouseEvent event) {
-//       
-//        String kor_ime = "cblunt1g";
-//        String password = "xWKblpiEK";
+       
+        String kor_ime = "kwellesley1h";
+        String password = "KITRaVCg8VV";
 ////        
 //        String kor_ime = "kkopke5";
 //        String password = "caMUmwAv";
 
-
+//
 //        String kor_ime = "bspitaro1u";
 //        String password = "FtrbIcCnsvLa";
 
-      String kor_ime = ime.getText();
-      String password = lozinka.getText();
+//      String kor_ime = ime.getText();
+//      String password = lozinka.getText();
 
         if (LoginService.login(kor_ime, password)){
             if(LoginService.logiraniKorisnik().getTip().equals("Vlasnik")){

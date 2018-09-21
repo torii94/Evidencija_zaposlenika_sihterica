@@ -13,7 +13,7 @@ import java.time.LocalTime;
  *
  * @author toni
  */
-public class Prisutnost {
+public class Prisutnost extends ImePrezime {
     private int ID;
     private Korisnik KorisnikID;
     private boolean Aktivan;
@@ -106,6 +106,11 @@ public class Prisutnost {
 
     public void setKorisnikID(Korisnik KorisnikID) {
         this.KorisnikID = KorisnikID;
+    }
+
+    @Override
+    public String ImeIPrezime() {
+        return KorisnikID.ImeIPrezime();
     }
 
    

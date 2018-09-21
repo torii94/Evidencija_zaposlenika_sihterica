@@ -3,19 +3,54 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/korisnikpc/Documents/NetBeansProjects/Evidencija_zaposlenika_sihterica/src/evidencija_zaposlenika_sihterica/Evidencija_zaposlenika_sihterica.java</file>
-            <file>file:/C:/Users/korisnikpc/Documents/NetBeansProjects/Evidencija_zaposlenika_sihterica/src/evidencija_zaposlenika_sihterica/Utils.java</file>
+            <file>file:/C:/Users/korisnikpc/Documents/NetBeansProjects/Evidencija_zaposlenika_sihterica/src/Services/LoginService.java</file>
+            <file>file:/C:/Users/korisnikpc/Documents/NetBeansProjects/Evidencija_zaposlenika_sihterica/src/evidencija_zaposlenika_sihterica/View/KorisnikInformacije.fxml</file>
+            <file>file:/C:/Users/korisnikpc/Documents/NetBeansProjects/Evidencija_zaposlenika_sihterica/src/evidencija_zaposlenika_sihterica/Controller/PrisutniZaposleniciController.java</file>
+            <file>file:/C:/Users/korisnikpc/Documents/NetBeansProjects/Evidencija_zaposlenika_sihterica/src/evidencija_zaposlenika_sihterica/Controller/StatistikaController.java</file>
             <file>file:/C:/Users/korisnikpc/Documents/NetBeansProjects/Evidencija_zaposlenika_sihterica/src/evidencija_zaposlenika_sihterica/View/Login.fxml</file>
-            <file>file:/C:/Users/korisnikpc/Documents/NetBeansProjects/Evidencija_zaposlenika_sihterica/src/evidencija_zaposlenika_sihterica/Model/Korisnik.java</file>
+            <file>file:/C:/Users/korisnikpc/Documents/NetBeansProjects/Evidencija_zaposlenika_sihterica/src/evidencija_zaposlenika_sihterica/Utils.java</file>
+            <file>file:/C:/Users/korisnikpc/Documents/NetBeansProjects/Evidencija_zaposlenika_sihterica/src/evidencija_zaposlenika_sihterica/Style/style_Korisnik.css</file>
+            <file>file:/C:/Users/korisnikpc/Documents/NetBeansProjects/Evidencija_zaposlenika_sihterica/src/evidencija_zaposlenika_sihterica/View/PrisutniZaposlenici.fxml</file>
             <file>file:/C:/Users/korisnikpc/Documents/NetBeansProjects/Evidencija_zaposlenika_sihterica/src/evidencija_zaposlenika_sihterica/Controller/MenuController.java</file>
+            <file>file:/C:/Users/korisnikpc/Documents/NetBeansProjects/Evidencija_zaposlenika_sihterica/src/evidencija_zaposlenika_sihterica/ScreensController.java</file>
             <file>file:/C:/Users/korisnikpc/Documents/NetBeansProjects/Evidencija_zaposlenika_sihterica/src/evidencija_zaposlenika_sihterica/View/Menu.fxml</file>
+            <file>file:/C:/Users/korisnikpc/Documents/NetBeansProjects/Evidencija_zaposlenika_sihterica/src/Services/BolovanjeService.java</file>
+            <file>file:/C:/Users/korisnikpc/Documents/NetBeansProjects/Evidencija_zaposlenika_sihterica/src/evidencija_zaposlenika_sihterica/Controller/KorisnikInformacijeController.java</file>
             <file>file:/C:/Users/korisnikpc/Documents/NetBeansProjects/Evidencija_zaposlenika_sihterica/src/evidencija_zaposlenika_sihterica/Controller/LoginController.java</file>
-            <file>file:/C:/Users/korisnikpc/Documents/NetBeansProjects/Evidencija_zaposlenika_sihterica/src/evidencija_zaposlenika_sihterica/Style/style.css</file>
-            <file>file:/C:/Users/korisnikpc/Documents/NetBeansProjects/Evidencija_zaposlenika_sihterica/src/model/model.java</file>
-            <file>file:/C:/Users/korisnikpc/Documents/NetBeansProjects/Evidencija_zaposlenika_sihterica/src/evidencija_zaposlenika_sihterica/Model/Baza.java</file>
+            <file>file:/C:/Users/korisnikpc/Documents/NetBeansProjects/Evidencija_zaposlenika_sihterica/src/evidencija_zaposlenika_sihterica/View/Zaposlenici.fxml</file>
+            <file>file:/C:/Users/korisnikpc/Documents/NetBeansProjects/Evidencija_zaposlenika_sihterica/src/evidencija_zaposlenika_sihterica/Controller/GodisnjiController.java</file>
+            <file>file:/C:/Users/korisnikpc/Documents/NetBeansProjects/Evidencija_zaposlenika_sihterica/src/evidencija_zaposlenika_sihterica/Model/Firma.java</file>
+            <file>file:/C:/Users/korisnikpc/Documents/NetBeansProjects/Evidencija_zaposlenika_sihterica/src/evidencija_zaposlenika_sihterica/Model/Prisutnost.java</file>
+            <file>file:/C:/Users/korisnikpc/Documents/NetBeansProjects/Evidencija_zaposlenika_sihterica/src/evidencija_zaposlenika_sihterica/Controller/ProfilKorisnikaController.java</file>
+            <file>file:/C:/Users/korisnikpc/Documents/NetBeansProjects/Evidencija_zaposlenika_sihterica/src/evidencija_zaposlenika_sihterica/Style/menuLijevo.css</file>
             <file>file:/C:/Users/korisnikpc/Documents/NetBeansProjects/Evidencija_zaposlenika_sihterica/src/evidencija_zaposlenika_sihterica/Model/Konekcija.java</file>
+            <file>file:/C:/Users/korisnikpc/Documents/NetBeansProjects/Evidencija_zaposlenika_sihterica/src/model/model.java</file>
+            <file>file:/C:/Users/korisnikpc/Documents/NetBeansProjects/Evidencija_zaposlenika_sihterica/src/evidencija_zaposlenika_sihterica/View/Bolovanje.fxml</file>
+            <file>file:/C:/Users/korisnikpc/Documents/NetBeansProjects/Evidencija_zaposlenika_sihterica/src/Services/PlacaService.java</file>
+            <file>file:/C:/Users/korisnikpc/Documents/NetBeansProjects/Evidencija_zaposlenika_sihterica/src/evidencija_zaposlenika_sihterica/Controller/ZaposleniciController.java</file>
+            <file>file:/C:/Users/korisnikpc/Documents/NetBeansProjects/Evidencija_zaposlenika_sihterica/src/evidencija_zaposlenika_sihterica/View/Sihterica.fxml</file>
+            <file>file:/C:/Users/korisnikpc/Documents/NetBeansProjects/Evidencija_zaposlenika_sihterica/src/Services/FirmaService.java</file>
+            <file>file:/C:/Users/korisnikpc/Documents/NetBeansProjects/Evidencija_zaposlenika_sihterica/src/evidencija_zaposlenika_sihterica/Evidencija_zaposlenika_sihterica.java</file>
+            <file>file:/C:/Users/korisnikpc/Documents/NetBeansProjects/Evidencija_zaposlenika_sihterica/src/evidencija_zaposlenika_sihterica/Controller/SihtericaController.java</file>
+            <file>file:/C:/Users/korisnikpc/Documents/NetBeansProjects/Evidencija_zaposlenika_sihterica/src/evidencija_zaposlenika_sihterica/Model/Korisnik.java</file>
+            <file>file:/C:/Users/korisnikpc/Documents/NetBeansProjects/Evidencija_zaposlenika_sihterica/src/evidencija_zaposlenika_sihterica/Model/Bolovanje.java</file>
+            <file>file:/C:/Users/korisnikpc/Documents/NetBeansProjects/Evidencija_zaposlenika_sihterica/src/evidencija_zaposlenika_sihterica/Model/Godisnji.java</file>
+            <file>file:/C:/Users/korisnikpc/Documents/NetBeansProjects/Evidencija_zaposlenika_sihterica/src/evidencija_zaposlenika_sihterica/View/ProfilKorisnika.fxml</file>
+            <file>file:/C:/Users/korisnikpc/Documents/NetBeansProjects/Evidencija_zaposlenika_sihterica/nbproject/jfx-impl.xml</file>
+            <file>file:/C:/Users/korisnikpc/Documents/NetBeansProjects/Evidencija_zaposlenika_sihterica/src/Services/PrisutnostService.java</file>
+            <file>file:/C:/Users/korisnikpc/Documents/NetBeansProjects/Evidencija_zaposlenika_sihterica/src/evidencija_zaposlenika_sihterica/Interfaces/ControlledScreen.java</file>
+            <file>file:/C:/Users/korisnikpc/Documents/NetBeansProjects/Evidencija_zaposlenika_sihterica/src/evidencija_zaposlenika_sihterica/View/Godisnji.fxml</file>
+            <file>file:/C:/Users/korisnikpc/Documents/NetBeansProjects/Evidencija_zaposlenika_sihterica/src/evidencija_zaposlenika_sihterica/Style/style.css</file>
+            <file>file:/C:/Users/korisnikpc/Documents/NetBeansProjects/Evidencija_zaposlenika_sihterica/src/evidencija_zaposlenika_sihterica/ControlledScreen.java</file>
+            <file>file:/C:/Users/korisnikpc/Documents/NetBeansProjects/Evidencija_zaposlenika_sihterica/src/Services/GodisnjiService.java</file>
+            <file>file:/C:/Users/korisnikpc/Documents/NetBeansProjects/Evidencija_zaposlenika_sihterica/src/evidencija_zaposlenika_sihterica/Model/Placa.java</file>
+            <file>file:/C:/Users/korisnikpc/Documents/NetBeansProjects/Evidencija_zaposlenika_sihterica/src/evidencija_zaposlenika_sihterica/View/korisnikinformacije.css</file>
+            <file>file:/C:/Users/korisnikpc/Documents/NetBeansProjects/Evidencija_zaposlenika_sihterica/src/evidencija_zaposlenika_sihterica/Model/Baza.java</file>
+            <file>file:/C:/Users/korisnikpc/Documents/NetBeansProjects/Evidencija_zaposlenika_sihterica/src/evidencija_zaposlenika_sihterica/View/Statistika.fxml</file>
+            <file>file:/C:/Users/korisnikpc/Documents/NetBeansProjects/Evidencija_zaposlenika_sihterica/src/evidencija_zaposlenika_sihterica/Controller/BolovanjeController.java</file>
             <file>file:/C:/Users/korisnikpc/Documents/NetBeansProjects/Evidencija_zaposlenika_sihterica/nbproject/build-impl.xml</file>
             <file>file:/C:/Users/korisnikpc/Documents/NetBeansProjects/Evidencija_zaposlenika_sihterica/src/Services/KorisnikService.java</file>
+            <file>file:/C:/Users/korisnikpc/Documents/NetBeansProjects/Evidencija_zaposlenika_sihterica/src/evidencija_zaposlenika_sihterica/Interfaces/model.java</file>
         </group>
     </open-files>
 </project-private>

@@ -197,30 +197,26 @@ public class BolovanjeController implements Initializable,ControlledScreen {
         greska.setHeaderText("Greska:");
         greska.setContentText("Greska prilikom povratka sa bolovanja");
         
-        if( datumPovratkaDE.getValue() != null && zaposlenikBolovnjePovratakCombo.getValue() != null ){  
-            ObservableList<Bolovanje> bolovanja= BolovanjeService.bolovanjeService.GetBolovanje(zaposlenikBolovnjePovratakCombo.getValue());
-            for(Bolovanje bol: bolovanja){
-                if(bol.isAktivan() == false){
-                  Bolovanje b= new Bolovanje();
-                  LocalDate isoDate = datumPovratkaDE.getValue();        
-                  long p2 = ChronoUnit.DAYS.between( bol.getOdlazak().toLocalDate(),isoDate);        
-                  Date date = java.sql.Date.valueOf(isoDate);
-                  b.setKorisnikID(zaposlenikBolovnjePovratakCombo.getValue());
-                  b.setAktivan(false);
-                  b.setDaniNaBolovanju((int)p2);
-                  b.setDolazak(date);
+        Bolovanje bol=BolovanjeService.bolovanjeService.DajDatumOdlaskaNaBolovanje(zaposlenikBolovnjePovratakCombo.getValue().getId());
+  
+            Bolovanje b= new Bolovanje();
+            LocalDate isoDate = datumPovratkaDE.getValue();        
+            long p2 = ChronoUnit.DAYS.between( bol.getOdlazak().toLocalDate(),isoDate); 
 
-                  BolovanjeService.bolovanjeService.uredi(b);
-                  potvrda.show();
-                  evidencijaTile.getChildren().clear();
-                  aktivnotile.getChildren().clear();
-                  PopuniBolovanje();
-                }  
-            }
-        }else {
-            greska.show();
+            Date date = java.sql.Date.valueOf(isoDate);
+            b.setKorisnikID(zaposlenikBolovnjePovratakCombo.getValue());
+            b.setAktivan(false);
+            b.setDaniNaBolovanju((int)p2);
+            b.setDolazak(date);
+
+            BolovanjeService.bolovanjeService.uredi(b);
+            potvrda.show();
+            evidencijaTile.getChildren().clear();
+            aktivnotile.getChildren().clear();
+            PopuniBolovanje();
+        
         }
-    }
+    
 
     @FXML
     private void OdlazakNaBolovanje(MouseEvent event) {

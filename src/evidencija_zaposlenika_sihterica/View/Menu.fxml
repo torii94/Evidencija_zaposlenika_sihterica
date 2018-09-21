@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="1000.0" style="-fx-background-color: #FFF;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="evidencija_zaposlenika_sihterica.Controller.MenuController">
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="1000.0" style="-fx-background-color: #FFF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="evidencija_zaposlenika_sihterica.Controller.MenuController">
    <children>
       <Pane layoutY="-1.0" prefHeight="122.0" prefWidth="1025.0" style="-fx-background-color: #0073DE;">
          <children>

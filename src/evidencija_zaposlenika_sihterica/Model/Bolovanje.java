@@ -11,7 +11,7 @@ import java.sql.Date;
  *
  * @author toni
  */
-public class Bolovanje  {
+public class Bolovanje extends ImePrezime  {
     private int ID;
     private Korisnik KorisnikID;
     private boolean Aktivan;
@@ -79,6 +79,11 @@ public class Bolovanje  {
 
     public void setKorisnikID(Korisnik KorisnikID) {
         this.KorisnikID = KorisnikID;
+    }
+
+    @Override
+    public String ImeIPrezime() {
+        return KorisnikID.ImeIPrezime();
     }
     
     

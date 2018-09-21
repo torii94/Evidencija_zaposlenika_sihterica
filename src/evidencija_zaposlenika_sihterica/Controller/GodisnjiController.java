@@ -52,7 +52,7 @@ public class GodisnjiController implements Initializable,ControlledScreen {
     Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
     Alert potvrda = new Alert(Alert.AlertType.INFORMATION);
     Alert greska = new Alert(Alert.AlertType.ERROR);
-    
+    int firma=LoginService.logiraniKorisnik().getFirma().getID();
     @FXML
     private Pane bolovanje_pane1;
     @FXML
@@ -85,7 +85,7 @@ public class GodisnjiController implements Initializable,ControlledScreen {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        int firma=LoginService.logiraniKorisnik().getFirma().getID();
+        
 
         ObservableList<Korisnik> korisnici= KorisnikService.korisnikService.dajZaposlenike(firma);
         OdlazakNaGodisnjiCombo.setItems(korisnici);
@@ -289,7 +289,7 @@ public class GodisnjiController implements Initializable,ControlledScreen {
         if( OdlazakDE.getValue() != null && OdlazakNaGodisnjiCombo.getValue() != null && ZamjenaCombo.getValue() != null ){  
                    
             Godisnji g= new Godisnji();
-            ObservableList<Korisnik> korisnici= KorisnikService.korisnikService.sveIzBaze();
+            ObservableList<Korisnik> korisnici= KorisnikService.korisnikService.dajZaposlenike(firma);
 
             LocalDate isoDate = OdlazakDE.getValue();
             Date date = java.sql.Date.valueOf(isoDate);

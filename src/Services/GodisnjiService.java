@@ -104,36 +104,8 @@ public class GodisnjiService implements model <Godisnji>{
         }
         return p;   
    }
-    public ObservableList<Godisnji> GetGodisnji(Korisnik korisnik) {
-    
-        try {
-            ObservableList <Godisnji> godisnji = FXCollections.observableArrayList();
-            PreparedStatement upit = DB.prepare ("SELECT  daniNaGodisnjem, odlazak, dolazak, zamjena FROM godisnji WHERE korisnik_idZaposlenik=? ");
-           
-            upit.setInt(1, korisnik.getId());
-            ResultSet rs = upit.executeQuery();
-            if (rs.next()){
-               Godisnji g = new Godisnji();
-                g.setDaniNaGodisnjem(rs.getInt(1));
-                g.setOdlazak(rs.getDate(2));
-                g.setDolazak(rs.getDate(3));
-                Korisnik k= new Korisnik();
-                k.setId(rs.getInt(4));
-                g.setZamjena(k);
-                g.setKorisnikID(korisnik);    
-                
-                godisnji.add(g);
-            }
-            
-            return godisnji; 
-                   
-        } catch (SQLException ex) {
-            System.out.println("Greška prilikom izvršavanja upita: " + ex.getMessage());
-            return null;
-        }
-    }
-      
 
+      
     @Override
     public Godisnji izBazePremaId(int id) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
@@ -285,6 +257,7 @@ public class GodisnjiService implements model <Godisnji>{
             return null;
         }      
     }
+      
        public Godisnji DajZaposlenikBrojDanaGodisnji(int id) {
         Godisnji p = new Godisnji();
         

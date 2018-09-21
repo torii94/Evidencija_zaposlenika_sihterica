@@ -11,9 +11,9 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="1000.0" style="-fx-background-color: #F8F9FA;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="evidencija_zaposlenika_sihterica.Controller.StatistikaController">
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="1000.0" style="-fx-background-color: #F8F9FA;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="evidencija_zaposlenika_sihterica.Controller.StatistikaController">
    <children>
-      <Pane fx:id="statistika_pane" layoutX="68.0" prefHeight="675.0" prefWidth="964.0" style="-fx-background-color: #F8F9FA;">
+      <Pane fx:id="statistika_pane" layoutX="68.0" prefHeight="691.0" prefWidth="964.0" style="-fx-background-color: #F8F9FA;">
          <children>
             <Pane layoutX="32.0" layoutY="49.0" prefHeight="195.0" prefWidth="288.0" styleClass="pane" stylesheets="@korisnikinformacije.css">
                <children>
@@ -445,7 +445,7 @@
             </Pane>
          </children>
       </Pane>
-      <Pane layoutY="-2.0" prefHeight="663.0" prefWidth="61.0" style="-fx-background-color: #515D65;">
+      <Pane layoutY="-2.0" prefHeight="691.0" prefWidth="61.0" style="-fx-background-color: #515D65;">
          <children>
             <Button alignment="TOP_CENTER" layoutX="1.0" layoutY="58.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" styleClass="buttonLeft" stylesheets="@../Style/menuLijevo.css">
                <graphic>

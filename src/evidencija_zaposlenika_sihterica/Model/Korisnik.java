@@ -14,7 +14,7 @@ import javafx.scene.image.Image;
  */
 
 
-public class Korisnik {
+public class Korisnik extends ImePrezime {
     private int id;
     private String ime;
     private String prezime;
@@ -181,10 +181,16 @@ public class Korisnik {
     public void setOpis_posla(String Opis_posla) {
         this.Opis_posla = Opis_posla;
     }
+    
        @Override
         public String toString() {
             return ime+" "+prezime;
         }
+
+    @Override
+    public String ImeIPrezime() {
+         return ime+" "+prezime;
+    }
    
     
 }

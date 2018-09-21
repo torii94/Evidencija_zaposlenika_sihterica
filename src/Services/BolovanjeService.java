@@ -130,32 +130,52 @@ public class BolovanjeService implements model <Bolovanje> {
             return null;
         }       
     }
+    
+//     public Bolovanje GetBolovanje(Korisnik korisnik){
+//          
+//         Bolovanje b = new Bolovanje();
+//         try{
+//          
+//         PreparedStatement upit = DB.prepare ("SELECT  daniNaBolovanju, odlazak, dolazak,aktivnoBolovanje FROM bolovanje WHERE korisnik_idZaposlenik=? ");
+//
+//            upit.setInt(1, korisnik.getId());
+//            ResultSet rs = upit.executeQuery();
+//                if (rs.next()){
+//                  
+//                    b.setDaniNaBolovanju(rs.getInt(1));
+//                    b.setOdlazak(rs.getDate(2));
+//                    b.setDolazak(rs.getDate(3)); 
+//                    b.setAktivan(rs.getBoolean(4));
+//                    b.setKorisnikID(korisnik);     
+//                                                      
+//                }                                
+//
+//        } catch (SQLException ex) {
+//            System.out.println("Greška prilikom izvršavanja upita: " + ex.getMessage());
+//            return null;
+//        }
+//          return b; 
+//     }
      
-    public ObservableList<Bolovanje> GetBolovanje(Korisnik korisnik) {
-        try {
-            ObservableList <Bolovanje> bolovanje = FXCollections.observableArrayList();
-            PreparedStatement upit = DB.prepare ("SELECT  daniNaBolovanju, odlazak, dolazak FROM bolovanje WHERE korisnik_idZaposlenik=? ");
-
-            upit.setInt(1, korisnik.getId());
+      public Bolovanje DajDatumOdlaskaNaBolovanje(int id){
+        Bolovanje p = new Bolovanje();      
+        try{
+            PreparedStatement upit = DB.prepare ("SELECT odlazak FROM bolovanje WHERE korisnik_idZaposlenik=? and aktivnoBolovanje=1  ");           
+            upit.setInt(1, id);
+           
             ResultSet rs = upit.executeQuery();
-                if (rs.next()){
-                    Bolovanje b = new Bolovanje();
-                    b.setDaniNaBolovanju(rs.getInt(1));
-                    b.setOdlazak(rs.getDate(2));
-                    b.setDolazak(rs.getDate(3));           
-                    b.setKorisnikID(korisnik);     
-
-                    bolovanje.add(b);               
-                }            
-                
-            return bolovanje; 
-
+            if (rs.next()){                        
+               p.setOdlazak(rs.getDate(1));                           
+            }
+                                 
         } catch (SQLException ex) {
             System.out.println("Greška prilikom izvršavanja upita: " + ex.getMessage());
             return null;
         }
-    }
-      
+        return p;   
+   }
+
+     
     public ObservableList<Bolovanje> GetAllBolovanje(int firma) {
         try {
             ObservableList <Bolovanje> bolovanja = FXCollections.observableArrayList();
